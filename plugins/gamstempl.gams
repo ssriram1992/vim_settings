@@ -1,0 +1,12 @@
+$offlisting
+$inlinecom /* */
+$offsymlist
+$Offsymxref
+$oninline
+
+Option decimals = 4;
+Option solvelink = 0;
+
+Option Solprint = off;
+Option limrow = 0;
+Option limcol = 0;
