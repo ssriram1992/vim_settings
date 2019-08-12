@@ -26,12 +26,12 @@ inoremap <buffer> qqd<Tab> \qquad
 " :nnoremap <F9> :w<CR>:silent exec "!pdflatex %"<CR><C-l> :!open %:r.pdf <cr><cr>
 
 function! Dtemp()
-!rm %:r.log %:r.bbl %:r.out %:r.*xmk %:r.blg %:r.fls
+!rm %:r.log %:r.bbl %:r.out %:r.*xmk %:r.blg %:r.fls %:r.snm %:r.toc %:r.aux %:r.nav
 endfunction	
 
 
 function! DtempAll()
-!rm *.log *.bbl *.out *.*xmk *.blg *.fls
+!rm *.log *.bbl *.out *.*xmk *.blg *.fls *.aux *.snm *.toc *.nav
 endfunction	
 
 function! Tex()

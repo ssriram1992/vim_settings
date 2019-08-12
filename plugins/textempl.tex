@@ -10,34 +10,27 @@
 \usepackage[inline]{showlabels}
 \renewcommand{\qedsymbol}{$\blacksquare$}
 
-% Uncomment this for Track changes
-% \usepackage[authormarkup=footnote]{changes}
-% \definechangesauthor[color=blue]{Sriram}
-% \definechangesauthor[color=red]{CoAuth}
-% \newcommand{\sriAdd}[1]{\added[id=Sriram]{#1}}
-% \newcommand{\sriDel}[1]{\deleted[id=Sriram]{#1}}
-% \newcommand{\CoAdd}[1]{\added[id=CoAuth]{#1}}
-% \newcommand{\CoDel}[1]{\deleted[id=CoAuth]{#1}}
-
 
 
 % Uncomment this for theorem styles
-% \theoremstyle{definition}
-% \newtheorem{ex}{Example}
-% \newtheorem{prop}{Proposition}
-% \newtheorem{theorem}{Theorem}
-% \newtheorem{Def}{Definition}
+\theoremstyle{definition}
+\newtheorem{ex}{Example}
+\newtheorem{lemma}[ex]{Lemma}
+\newtheorem{theorem}[ex]{Theorem}
+\newtheorem{Def}[ex]{Definition}
+\newtheorem{corollary}[ex]{Corollary}
+\newtheorem{assumption}[ex]{Assumption}
+\newtheorem{claim}{Claim}[theorem]
 \allowdisplaybreaks
 
-% \crefname{assumption}{Assumption}{Assumptions}
-% \crefname{lemma}{Lemma}{Lemmata}
-% \crefname{theorem}{Theorem}{Theorems}
-% \crefname{corollary}{Corollary}{Corollaries}
-% \crefname{prop}{Proposition}{Propositions}
-% \crefname{claim}{Claim}{Claims}
-% \crefname{procedure}{Procedure}{Procedures}
-% \crefname{Def}{Definition}{Definition}
-% \crefname{remark}{Remark}{Remarks}
+\crefname{assumption}{Assumption}{Assumptions}
+\crefname{lemma}{Lemma}{Lemmata}
+\crefname{theorem}{Theorem}{Theorems}
+\crefname{corollary}{Corollary}{Corollaries}
+\crefname{claim}{Claim}{Claims}
+\crefname{algorithm}{Algorithm}{Algorithms}
+\crefname{Def}{Definition}{Definition}
+\crefname{remark}{Remark}{Remarks}
 \crefname{figure}{Figure}{Figures}
 \crefname{section}{Section}{Sections}
 \crefname{table}{Table}{Tables}
@@ -51,20 +44,20 @@
 \newcommand{\Q}{\mathbb{Q}}
 \newcommand{\Z}{\mathbb{Z}}
 
-% \newcommand{\conv}{\operatorname{conv}}
-% \newcommand{\intr}{\operatorname{int}}
-% \newcommand{\relintr}{\operatorname{relint}}
-% \newcommand{\relint}{\relintr}
-% \newcommand{\rec}{\operatorname{rec}}
-% \newcommand{\lin}{\operatorname{lin}}
-% \newcommand{\bd}{\operatorname{bd}}
-% \newcommand{\cl}{\operatorname{cl}}
-% \newcommand{\proj}{\operatorname{proj}}
-% \newcommand{\sgn}{\operatorname{sgn}}
-% \newcommand{\cone}{\operatorname{cone}}
+\newcommand{\conv}{\operatorname{conv}}
+\newcommand{\intr}{\operatorname{int}}
+\newcommand{\relintr}{\operatorname{relint}}
+\newcommand{\relint}{\relintr}
+\newcommand{\rec}{\operatorname{rec}}
+\newcommand{\lin}{\operatorname{lin}}
+\newcommand{\bd}{\operatorname{bd}}
+\newcommand{\cl}{\operatorname{cl}}
+\newcommand{\proj}{\operatorname{proj}}
+\newcommand{\sgn}{\operatorname{sgn}}
+\newcommand{\cone}{\operatorname{cone}}
 
-% \newcommand{\floor}[1]{\left\lfloor#1\right\rfloor}
-% \newcommand{\ceil}[1]{\left\lceil#1\right\rceil}
+\newcommand{\floor}[1]{\left\lfloor#1\right\rfloor}
+\newcommand{\ceil}[1]{\left\lceil#1\right\rceil}
 
 
 %% Heading information
