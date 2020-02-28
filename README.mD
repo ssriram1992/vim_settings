@@ -18,6 +18,8 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'vim-latex/vim-latex'
+" In addition, make your custom color schemes
+" at http://bytefluent.com/vivify/
 Plugin 'flazz/vim-colorschemes'
 
 
