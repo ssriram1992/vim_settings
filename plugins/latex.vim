@@ -1,9 +1,9 @@
 " To have Ctrl+N fill labels with ':' in them
 set iskeyword+=:
-" let g:Tex_ViewRule_pdf = 'open -a Skim'
 let g:Tex_CompileRule_format = 'pdf'
-let g:Tex_CompileRule_pdf = 'pdflatex $*'
-let g:Tex_ViewRule_pdf = 'okular --unique'
+let g:Tex_CompileRule_pdf = 'pdflatex $* -synctex=1'
+let g:Tex_ViewRule_pdf = 'open -a Skim'
+" let g:Tex_ViewRule_pdf = 'okular --unique'
 
 " To identify align environment as a Math environment
 call TexNewMathZone("E","align",1)
@@ -37,7 +37,7 @@ endfunction
 function! Tex()
 0r ~/.vim/plugins/textempl.tex
 let s:t = input( "Title? " )
-execute "normal 49G0f{lct}".s:t."\<Esc>58G"
+execute "normal 65G0f{lellct}".s:t."\<Esc>73G"
 endfunction
 
 " inoremap <C-j> <Esc>/<++><CR>cf>
@@ -82,6 +82,7 @@ nnoremap <buffer> <C-C>_         		wbi\underline{<Esc>ea}<Esc>
 " Mathmodes
 inoremap <buffer> bb<Tab>			\mathbb{}<Left>
 inoremap <buffer> cal<Tab>			\mathcal{}<Left>
+inoremap <buffer> scr<Tab>			\mathscr{}<Left>
 
 " Brackets
 inoremap <buffer> lp<Tab>			\left ( \right )<++><Esc>3bi
